@@ -194,7 +194,7 @@ The application will generate an initial simulation and open the dashboard.
 
 New simulations can then be started from the dashboard by changing the seed and/or number of steps.
 
-`run.py` uses [pywebview](https://pywebview.flowrl.com/) to open the dashboard in a native window and auto-detects the right rendering backend for your OS (WebView2 on Windows, WebKit on macOS, GTK/QT on Linux) — no platform-specific setup needed.
+`run.py` uses [pywebview](https://pywebview.flowrl.com/) to open the dashboard in a native window and auto-detects the right rendering backend for your OS (WebView2 on Windows, WebKit on macOS, GTK/QT on Linux) - no platform-specific setup needed.
 
 Prefer the command line instead? The desktop app just automates these two commands, which work identically on their own:
 
@@ -203,7 +203,7 @@ python -m ecosim.simulate --steps 3000 --seed 42 --out run
 python build_dashboard.py --prefix run --out ecosystem_dashboard.html
 ```
 
-Then open `ecosystem_dashboard.html` directly in any browser — no server needed.
+Then open `ecosystem_dashboard.html` directly in any browser - no server needed.
 
 ## Simulation output
 
@@ -230,7 +230,7 @@ Periodic snapshots of the ecosystem used for the recorded canvas playback.
 
 Summary information and metadata for the simulation run.
 
-> These four files (plus `ecosystem_dashboard.html`) are regenerated on every run and excluded via `.gitignore` — they aren't committed to the repo. Run the commands above to produce your own.
+> These four files (plus `ecosystem_dashboard.html`) are regenerated on every run and excluded via `.gitignore` - they aren't committed to the repo. Run the commands above to produce your own.
 
 ## Reproducibility
 
@@ -282,7 +282,7 @@ python build_dashboard.py \
     --out ecosystem_dashboard.html
 ```
 
-Playback snapshots (used for the canvas replay) are **not** downsampled — every frame recorded by `simulate.py` is embedded, since the replay needs the actual spatial states. Snapshot frequency is controlled at simulation time instead, via `snapshot_every` in `ecosim/config.py` (default: every 15 steps). If you push `--steps` much higher than the 3,000-step default, keep an eye on the printed output file size — increase `snapshot_every` if it gets unwieldy.
+Playback snapshots (used for the canvas replay) are **not** downsampled - every frame recorded by `simulate.py` is embedded, since the replay needs the actual spatial states. Snapshot frequency is controlled at simulation time instead, via `snapshot_every` in `ecosim/config.py` (default: every 15 steps). If you push `--steps` much higher than the 3,000-step default, keep an eye on the printed output file size - increase `snapshot_every` if it gets unwieldy.
 
 ## What I wanted to explore
 
@@ -325,7 +325,7 @@ Some areas I would like to explore further:
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
 
 ## Author
 
