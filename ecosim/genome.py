@@ -61,7 +61,7 @@ PREDATOR_TRAITS = [
     "pursuit_speed",
     "stamina",
     "acuity",
-    "camouflage",       # ambush camo — prey harder to detect the predator
+    "camouflage",       # ambush camo - prey harder to detect the predator
     "pack_affinity",    # tendency to coordinate / benefit from nearby allies
     "ambush",           # 0 = active pursuit style, 1 = sit-and-wait ambush style
 ]

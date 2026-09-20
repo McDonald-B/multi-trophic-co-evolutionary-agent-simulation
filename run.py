@@ -149,7 +149,7 @@ class EcosimAPI:
                             self.step = current_step
                             self.progress = int(simulation_progress)
                             self.status = (
-                                f"Simulating ecosystem — "
+                                f"Simulating ecosystem - "
                                 f"step {current_step:,} / {steps:,}"
                             )
 
@@ -264,7 +264,7 @@ def main():
     api = EcosimAPI()
 
     window = webview.create_window(
-        "Ecosim — Evolutionary Simulation",
+        "Ecosim - Evolutionary Simulation",
         DASHBOARD.as_uri(),
         js_api=api,
         width=1600,
