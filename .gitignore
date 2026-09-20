@@ -1,0 +1,29 @@
+# --- Generated simulation output (regenerate with the two commands in README.md) ---
+run_population.csv
+run_traits.csv
+run_snapshots.json
+run_summary.json
+ecosystem_dashboard.html
+
+# Catch any other run with a different --out prefix, e.g. `--out experiment1`
+*_population.csv
+*_traits.csv
+*_snapshots.json
+*_summary.json
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
